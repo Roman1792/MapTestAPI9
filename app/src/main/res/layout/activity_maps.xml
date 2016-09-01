@@ -1,0 +1,27 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:id="@+id/map"
+    tools:context="com.roman1792.maptestapi9.MapsActivity"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_weight="9" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/button_downloadPath"
+        android:id="@+id/button"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:background="#f8de6a"
+        android:textSize="18dp"
+        android:onClick="onButtonClicked" />
+
+</LinearLayout>
